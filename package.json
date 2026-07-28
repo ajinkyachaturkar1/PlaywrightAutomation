@@ -1,0 +1,23 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frameWork1" : "npx playwright test ClientAppCP.spec.js",
+    "UIBasics": "npx playwright test UIBasicstest.spec.js",
+    "allure:generate": "allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report",
+    "removeOldAllureResults" : "Remove-Item -Recurse -Force .\\allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^26.1.1",
+    "allure-playwright": "^3.10.2",
+    "exceljs": "4.4.0"
+  }
+}
