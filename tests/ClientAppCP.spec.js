@@ -1,5 +1,5 @@
  const {test, expect} = require('@playwright/test');
- const {customtest} = require('../utils/cstest-base');
+ const {customtest} = require('../Utils/cstest-base');
 
  const {POManager} = require('../pageobjectsClientApp/POManager');
  //Json->string->js object
