@@ -42,5 +42,3 @@ expect(response.orderId.includes(orderIdDetails)).toBeTruthy();
  
 });
  
-//Verify if order created is showing in history page
-// Precondition - create order -
