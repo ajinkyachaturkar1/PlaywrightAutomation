@@ -18,10 +18,13 @@ test('Popup Validations', async({page})=>
 
     //iFrames
 
-    const framesPage= page.frameLocator('#courses-iframe');
-    await framesPage.locator('iframe[name="iframe-name"]').contentFrame().getByRole('link', { name: 'NEW All Access plan' }).click();
-    const textCheck = await framesPage.locator(".text h2").textContent();
+    const framesPage = page.frameLocator("#courses-iframe");
+    await framesPage.locator("li a[href*='lifetime-access']:visible").click();
+     const textCheck =await framesPage.locator(".text h2").textContent();
     console.log(textCheck.split(" ")[1]);
+
+
+
 
 
 })
